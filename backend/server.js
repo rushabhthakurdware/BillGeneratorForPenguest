@@ -12,13 +12,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/penguests", penguestRoutes);
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost:27017/penguest",{
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.error(err));
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost:27017/penguest")
+  .then(() => console.log("Connected to Database"))
+  .catch((err) => console.log("Connection Error:", err));
 
 app.use("/api/bills", billRoutes);
 
