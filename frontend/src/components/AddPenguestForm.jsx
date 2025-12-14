@@ -64,7 +64,7 @@ function AddPenguestForm({ onPenguestAdded }) {
             value={formData.name}
             onChange={handleChange}
             required
-            style={{ backgroundColor: "#4e4b4bff",marginLeft: "100px" }}
+            style={{ backgroundColor: "#4e4b4bff",color: "white",marginLeft: "100px" }}
           />
         </div>
         <div style={{ marginBottom: "10px" }}>
@@ -74,7 +74,7 @@ function AddPenguestForm({ onPenguestAdded }) {
             name="background"
             value={formData.background}
             onChange={handleChange}
-            style={{ backgroundColor: "#4e4b4bff",marginLeft: "60px" }}
+            style={{ backgroundColor: "#4e4b4bff",color: "white",marginLeft: "60px" }}
           />
         </div>
         <div style={{ marginBottom: "10px" }}>
@@ -84,7 +84,7 @@ function AddPenguestForm({ onPenguestAdded }) {
             name="jobDetails"
             value={formData.jobDetails}
             onChange={handleChange}
-            style={{ backgroundColor: "#4e4b4bff",marginLeft: "70px" }}
+            style={{ backgroundColor: "#4e4b4bff",color: "white",marginLeft: "70px" }}
           />
         </div>
         <div style={{ marginBottom: "10px" }}>
@@ -95,7 +95,7 @@ function AddPenguestForm({ onPenguestAdded }) {
             value={formData.aadharNumber}
             onChange={handleChange}
             required
-            style={{ backgroundColor: "#4e4b4bff",marginLeft: "35px" }}
+            style={{ backgroundColor: "#4e4b4bff",color: "white",marginLeft: "35px" }}
           />
         </div>
         <div style={{ marginBottom: "10px" }}>
@@ -106,7 +106,7 @@ function AddPenguestForm({ onPenguestAdded }) {
             value={formData.phoneNumber}
             onChange={handleChange}
             required
-            style={{ backgroundColor: "#4e4b4bff",marginLeft: "40px" }}
+            style={{ backgroundColor: "#4e4b4bff",color: "white",marginLeft: "40px" }}
           />
         </div>
         <button type="submit" style={{ backgroundColor: "#203a10ff", color: "white", padding: "10px 20px", border: "none", borderRadius: "5px", cursor: "pointer",marginLeft: "200px",marginTop: "50px" }}>Add Penguest</button>

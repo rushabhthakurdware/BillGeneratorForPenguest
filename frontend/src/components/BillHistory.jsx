@@ -113,7 +113,7 @@ function BillHistory() {
   useEffect(() => {
     const fetchBills = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/bills");
+        const res = await axios.get("https://billgeneratorforpenguest-backend.onrender.com/api/bills")
         setBills(res.data);
       } catch (err) {
         console.error("Error fetching bills:", err);
