@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import billRoutes from "./routes/BillRoutes.js";
-import penguestRoutes from "./routes/penguestRoutes.js";
+import penguestRoutes from "./routes/PenguestRoutes.js";
 
 dotenv.config();
 const app = express();
