@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import { API_BASE_URL } from "../config";
 
 function BillForm() {
   const [formData, setFormData] = useState({
