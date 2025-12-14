@@ -23,7 +23,7 @@ function AddPenguestForm({ onPenguestAdded }) {
     setMessage("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/penguests", formData);
+      const res = await axios.post(`${API_BASE_URL}/api/penguests`, formData);
       setMessage("Penguest added successfully ✅");
       setFormData({
         name: "",

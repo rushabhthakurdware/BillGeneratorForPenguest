@@ -35,7 +35,7 @@ function BillForm() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/bills/generate",
+        `${API_BASE_URL}/api/bills/generate`,
         payload
       );
       console.log(res.data); // check backend response

@@ -10,7 +10,7 @@ function PenguestList() {
   useEffect(() => {
     const fetchPenguests = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/penguests");
+        const res = await axios.get(`${API_BASE_URL}/api/penguests`);
         setPenguests(res.data);
         setLoading(false);
       } catch (error) {

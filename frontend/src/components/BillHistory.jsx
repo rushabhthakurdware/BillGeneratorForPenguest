@@ -127,7 +127,7 @@ function BillHistory() {
     if (!window.confirm("Are you sure you want to delete this bill?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/bills/${billId}`);
+      await axios.delete(`${API_BASE_URL}/api/bills/${billId}`);
       setBills(bills.filter((bill) => bill._id !== billId));
     } catch (error) {
       console.error("Error deleting bill:", error);
